@@ -95,11 +95,15 @@
 			</a>
 		</div>
 
-		<div class="icon" title="Open-source code">
+		<div class="icon" title="Research (Copycat Method) source code">
 			<a target="_blank" href="https://github.com/jeiks/Stealing_DL_Models">
 				<img src="PUBLIC_URL/assets/img/github.png" alt="github icon"/>
 			</a>
 		</div>
-
+		<div class="icon" title="Source code of this page">
+			<a target="_blank" href="https://github.com/jeiks/copycat-cnn-explainer">
+				<img src="PUBLIC_URL/assets/img/github.png" alt="github icon"/>
+			</a>
+		</div>
 	</div>
 </div>
