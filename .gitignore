@@ -5,6 +5,7 @@ package-lock.json
 public/assets/js/bundle.*
 public/assets/js/
 public/assets/css/bundle.*
+public/copycat-cnn-explainer
 *.swp
 yarn.lock
 dist/
