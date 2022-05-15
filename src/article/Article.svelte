@@ -101,8 +101,8 @@
     <p>
         The <a href='https://poloclub.github.io/cnn-explainer/'>CNN Explainer</a> is a great tool that provides interactive visualization of a CNN model using "JavaScript".
         It runs on GitHub and uses TensorFlowJS, Svelte and D3.js (more information bellow).
-        Taking advantage of it, we are using their project to provide an interactive visualization of an Oracle and a Copycat models.
-        We want you to better understand our research by visualizing the behavior of Oracle and Copycat models, interacting with their parameters and comparing them with each other.
+        Using these features, we are providing an interactive visualization of Oracle and Copycat models.
+        It provides a way to better understand our research as you can visualize the behavior of Oracle and Copycat models, interact with their parameters and compare them against each other.
     </p>
     <h2>Interactive features</h2>
     <ol>
@@ -121,7 +121,7 @@
 
     <h2>More information</h2>
     <p>
-       The network architecture is Tiny-VGG (it is a small model, allowing to display its parameters) and was implemented in TensorFlow.
+       The network architecture is Tiny-VGG (it is a small architecture, allowing the complete visualization of its parameters) and it was built using TensorFlow.
        Based on <a href='https://github.com/poloclub/cnn-explainer/tree/master/tiny-vgg'>cnn-explainer</a> code, we developed the Copycat method to run against their model.
        This site has also been adapted to show both models at the same time and provide the user a way to compare them.
     </p>
@@ -134,5 +134,6 @@
       "<i>CNN Explainer uses <a href='https://js.tensorflow.org/'>TensorFlow.js</a>, an in-browser GPU-accelerated deep learning library to load the pretrained model for visualization.
       It was necessary TensorFlowJS for exporting the model, <a href='https://svelte.dev/'>Svelte</a> as a framework and <a href='https://d3js.org/'>D3.js</a> for visualizations.</i>"
     </p>
+    <p>.</p>
   </div>
 </body>
