@@ -122,12 +122,12 @@
     <h2>More information</h2>
     <p>
        The network architecture is Tiny-VGG (it is a small architecture, allowing the complete visualization of its parameters) and it was built using TensorFlow.
-       Based on <a href='https://github.com/poloclub/cnn-explainer/tree/master/tiny-vgg'>cnn-explainer</a> code, we developed the Copycat method to run against their model.
-       This site has also been adapted to show both models at the same time and provide the user a way to compare them.
+       Using the <a href='https://github.com/poloclub/cnn-explainer/tree/master/tiny-vgg'>cnn-explainer</a> code as Oracle, we developed (inserted) the Copycat in TensorFlow to run against their model.
+       This page has also been adapted to show both models at the same time and provide the user with a way to explore and compare them.
     </p>
     <p>
-       The models were obtained in our experiments. The Oracle and Copycat accuracies on the test dataset were 66% and 61% respectively (Copycat performance: 92%).
-       After training, they were exported to TensorFlowJS and are fully running in your browser :D
+       The models (Oracle and Copycat) displayed here were obtained in our experiments (<a href='https://github.com/jeiks/copycat-cnn-explainer/tree/main/tiny-vgg'>code</a>). The Oracle and Copycat accuracies on the test dataset were 66% and 61% respectively, achieving a Copycat performance of 92%.
+       After training, they were exported to TensorFlowJS.
     </p>
     <p>
       From their <a href='https://poloclub.github.io/cnn-explainer/'>website</a>:
