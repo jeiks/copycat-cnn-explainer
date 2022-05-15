@@ -7,6 +7,7 @@ And it was used by our team to provide a interactive comparison between Oracle a
 ## Live Visualization
 
 To access the interactive visualization, visit: [http://www.jeiks.net/copycat-cnn-explainer/](http://www.jeiks.net/copycat-cnn-explainer/)
+<br>Please use your computer, because interactive viewing is not that good on smartphones
 
 ## Running Locally
 
