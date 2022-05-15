@@ -97,19 +97,12 @@
 
 <body>
   <div id="description">
-    <h2>Comparing Oracle and Copycat models by interactive visualization</h2>
-    <p>The <a href='https://poloclub.github.io/cnn-explainer/'>CNN Explainer</a> is a great tool that provides interactive visualization within the CNN model using JavaScript.</p>
-    <p>Therefore, we are using their project to provide a visual comparison between Oracle and Copycat models.
-       The network architecture is Tiny-VGG (it is a small model, allowing to display its parameters) and was implemented in TensorFlow.
-       Based on <a href='https://github.com/poloclub/cnn-explainer/tree/master/tiny-vgg'>cnn-explainer</a> code, we developed the Copycat method to run against their model.
-       This site has also been adapted to show both models at the same time.
-    </p>
-    <p>The models shown above were obtained in our experiments. Oracle and Copycat performance on the test dataset was 66% and 61% respectively (Copycat performance: 92%).
-       After, the models were exported to JavaScript. And now they are fully running in your browser :D</p>
+    <h2>Oracle and Copycat models: an interactive visualization</h2>
     <p>
-      From their <a href='https://poloclub.github.io/cnn-explainer/'>website</a>:
-      "<i>CNN Explainer uses <a href='https://js.tensorflow.org/'>TensorFlow.js</a>, an in-browser GPU-accelerated deep learning library to load the pretrained model for visualization.
-      It was necessary TensorFlowJS for exporting the model, <a href='https://svelte.dev/'>Svelte</a> as a framework and <a href='https://d3js.org/'>D3.js</a> for visualizations.</i>"
+        The <a href='https://poloclub.github.io/cnn-explainer/'>CNN Explainer</a> is a great tool that provides interactive visualization of a CNN model using "JavaScript".
+        It runs on GitHub and uses TensorFlowJS, Svelte and D3.js (more information bellow).
+        Taking advantage of it, we are using their project to provide an interactive visualization of an Oracle and a Copycat models.
+        We want you to better understand our research by visualizing the behavior of Oracle and Copycat models, interacting with their parameters and comparing them with each other.
     </p>
     <h2>Interactive features</h2>
     <ol>
@@ -125,5 +118,21 @@
     <div class="video">
       <Youtube videoId="HnWIHWFbuUQ" playerId="demo_video" bind:this={currentPlayer}/>
     </div>
+
+    <h2>More information</h2>
+    <p>
+       The network architecture is Tiny-VGG (it is a small model, allowing to display its parameters) and was implemented in TensorFlow.
+       Based on <a href='https://github.com/poloclub/cnn-explainer/tree/master/tiny-vgg'>cnn-explainer</a> code, we developed the Copycat method to run against their model.
+       This site has also been adapted to show both models at the same time and provide the user a way to compare them.
+    </p>
+    <p>
+       The models were obtained in our experiments. The Oracle and Copycat accuracies on the test dataset were 66% and 61% respectively (Copycat performance: 92%).
+       After training, they were exported to TensorFlowJS and are fully running in your browser :D
+    </p>
+    <p>
+      From their <a href='https://poloclub.github.io/cnn-explainer/'>website</a>:
+      "<i>CNN Explainer uses <a href='https://js.tensorflow.org/'>TensorFlow.js</a>, an in-browser GPU-accelerated deep learning library to load the pretrained model for visualization.
+      It was necessary TensorFlowJS for exporting the model, <a href='https://svelte.dev/'>Svelte</a> as a framework and <a href='https://d3js.org/'>D3.js</a> for visualizations.</i>"
+    </p>
   </div>
 </body>
