@@ -28,6 +28,9 @@ npm install
 Then run CNN Explainer:
 
 ```bash
+cd public
+ln -s . copycat-cnn-explainer
+cd ..
 npm run dev
 ```
 

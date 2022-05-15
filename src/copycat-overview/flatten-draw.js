@@ -541,8 +541,10 @@ const drawLogitLayer = (arg) => {
     .select('.layer-label').node();
   let pos = getMidCoords(svg, anchorElement);
   let wholeSvg = d3.select('#copycat-cnn-svg');
+  let wholeSvgOracle = d3.select('#cnn-svg');
   let svgYMid = +wholeSvg.style('height').replace('px', '') / 2;
-  let detailViewTop = 100 + svgYMid - 192 / 2;
+  let svgYOracle = +wholeSvgOracle.style('height').replace('px', '');
+  let detailViewTop = 100 + svgYMid + svgYOracle - 192 / 2;
 
   const copycatdetailview = document.getElementById('copycatdetailview');
   copycatdetailview.style.top = `${detailViewTop}px`;

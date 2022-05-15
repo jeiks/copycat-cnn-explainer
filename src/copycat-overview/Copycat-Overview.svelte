@@ -291,9 +291,11 @@
         
         // Dynamically position the detail view
         let wholeSvg = d3.select('#copycat-cnn-svg');
+        let wholeSvgOracle = d3.select('#cnn-svg');
         let svgYMid = +wholeSvg.style('height').replace('px', '') / 2;
+        let svgYOracle = +wholeSvgOracle.style('height').replace('px', '');
         let svgWidth = +wholeSvg.style('width').replace('px', '');
-        let copycatdetailViewTop = 100 + svgYMid - 250 / 2;
+        let copycatdetailViewTop = 100 + svgYMid + svgYOracle - 250 / 2;
         let positionX = intermediateLayerPosition[Object.keys(layerIndexDict)[curLayerIndex]];
   
         let posX = 0;
