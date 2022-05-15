@@ -7,7 +7,6 @@ npm install
 npm run build
 
 rm -rf $TARGET
-mkdir -p $TARGET
 cp -r ./public $TARGET
 
 git add -A
