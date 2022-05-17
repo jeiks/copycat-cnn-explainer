@@ -179,7 +179,7 @@
       {file: 'orange_1.jpeg', class: 'orange'},
       {file: 'car_1.jpeg', class: 'sport car'},
       {file: 'dog_1.jpeg', class: 'dog'},
-      {file: 'penguim_1.jpeg', class: 'penguim'},
+      {file: 'penguim_1.jpeg', class: 'penguin'},
       {file: 'tree_1.jpeg', class: 'tree'}
     ];
     let selectedImage = imageOptions[6].file;
