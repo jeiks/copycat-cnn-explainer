@@ -177,13 +177,16 @@
       {file: 'espresso_1.jpeg', class: 'espresso'},
       {file: 'panda_1.jpeg', class: 'red panda'},
       {file: 'orange_1.jpeg', class: 'orange'},
-      {file: 'car_1.jpeg', class: 'sport car'},
+      {file: 'car_1.jpeg', class: 'sport car'}
+    ];
+    let selectedImage = imageOptions[6].file;
+ 
+    let imageOptionsNPD = [
       {file: 'dog_1.jpeg', class: 'dog'},
       {file: 'penguim_1.jpeg', class: 'penguin'},
       {file: 'tree_1.jpeg', class: 'tree'}
     ];
-    let selectedImage = imageOptions[6].file;
-  
+
     let nodeData;
     let selectedNodeIndex = -1;
     let isExitedFromDetailedView = true;
@@ -1514,7 +1517,23 @@
               data-imageName={image.file}/>
           </div>
         {/each}
-  
+
+        <span style="font-size: 1.1rem; margin-right: 2px; font-family: 'Neucha';">Out-of-Domain images:</span>
+
+        {#each imageOptionsNPD as image, i}
+          <div class="image-container"
+            on:click={disableControl ? () => {} : imageOptionClicked}
+            class:inactive={selectedImage !== image.file}
+            class:disabled={disableControl}
+            data-imageName={image.file}>
+            <img src="PUBLIC_URL/assets/img/{image.file}"
+              alt="image option"
+              title="{image.class}"
+              data-imageName={image.file}/>
+          </div>
+        {/each}
+
+
         <!-- The plus button -->
           <div class="image-container"
             class:inactive={selectedImage !== 'custom'}

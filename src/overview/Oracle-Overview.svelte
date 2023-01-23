@@ -1512,7 +1512,9 @@
               data-imageName={image.file}/>
           </div>
         {/each}
-        <span>Out of Domain Images:</span>
+
+        <span style="font-size: 1.1rem; margin-right: 2px; font-family: 'Neucha';">Out-of-Domain images:</span>
+
         {#each imageOptionsNPD as image, i}
           <div class="image-container"
             on:click={disableControl ? () => {} : imageOptionClicked}
