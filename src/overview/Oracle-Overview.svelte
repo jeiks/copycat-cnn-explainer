@@ -1501,9 +1501,6 @@
         <span class='model-name'>Oracle Model:</span>
 
         {#each imageOptions as image, i}
-        <span>Out of Domain Images:</span>
-        {#each imageOptionsNPD as image, i}
-
           <div class="image-container"
             on:click={disableControl ? () => {} : imageOptionClicked}
             class:inactive={selectedImage !== image.file}
@@ -1515,6 +1512,20 @@
               data-imageName={image.file}/>
           </div>
         {/each}
+        <span>Out of Domain Images:</span>
+        {#each imageOptionsNPD as image, i}
+          <div class="image-container"
+            on:click={disableControl ? () => {} : imageOptionClicked}
+            class:inactive={selectedImage !== image.file}
+            class:disabled={disableControl}
+            data-imageName={image.file}>
+            <img src="PUBLIC_URL/assets/img/{image.file}"
+              alt="image option"
+              title="{image.class}"
+              data-imageName={image.file}/>
+          </div>
+        {/each}
+
   
         <!-- The plus button -->
           <div class="image-container"
