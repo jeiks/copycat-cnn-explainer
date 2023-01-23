@@ -177,12 +177,15 @@
       {file: 'espresso_1.jpeg', class: 'espresso'},
       {file: 'panda_1.jpeg', class: 'red panda'},
       {file: 'orange_1.jpeg', class: 'orange'},
-      {file: 'car_1.jpeg', class: 'sport car'},
+      {file: 'car_1.jpeg', class: 'sport car'}
+    ];
+    let selectedImage = imageOptions[6].file;
+
+    let imageOptionsNPD = [
       {file: 'dog_1.jpeg', class: 'dog'},
       {file: 'penguim_1.jpeg', class: 'penguin'},
       {file: 'tree_1.jpeg', class: 'tree'}
     ];
-    let selectedImage = imageOptions[6].file;
   
     let nodeData;
     let selectedNodeIndex = -1;
@@ -1498,6 +1501,9 @@
         <span class='model-name'>Oracle Model:</span>
 
         {#each imageOptions as image, i}
+        <span>Out of Domain Images:</span>
+        {#each imageOptionsNPD as image, i}
+
           <div class="image-container"
             on:click={disableControl ? () => {} : imageOptionClicked}
             class:inactive={selectedImage !== image.file}
